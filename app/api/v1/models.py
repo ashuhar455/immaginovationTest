@@ -9,3 +9,4 @@ class AIResponse(BaseModel):
     routine: List[str]
     products: List[str]
     warnings: List[str]
+    message: str
