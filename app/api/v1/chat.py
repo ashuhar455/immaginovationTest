@@ -1,10 +1,14 @@
-from fastapi import FastAPI, HTTPException
-from models import QueryRequest, AIResponse
-from rag import retrieve_relevant_context
-from llm import generate_response
-import json
+from fastapi import APIRouter, HTTPException
+from api.v1.models import *
+from database.rag import retrieve_relevant_context
+from services.llm import generate_response
 
-app = FastAPI()
+
+
+
+
+router = APIRouter(prefix="/chat", tags=["chat"])
+
 
 @app.post("/ask", response_model=AIResponse)
 def ask_ai(request: QueryRequest):

@@ -27,7 +27,7 @@ User Question:
 """
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model=os.getenv("OPEN_AI_MODEL"),
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": prompt}

@@ -1,0 +1,53 @@
+GenAI Task (FastAPI + RAG)
+ Overview
+
+This project is a starter codebase for a Generative AI evaluation task.
+
+The goal is to assess your ability to:
+
+* Work with LLMs in a production-like setup
+* Handle noisy and conflicting data
+* Build reliable, structured AI outputs
+* Improve an intentionally incomplete system
+
+---
+
+
+
+ Task
+
+You are expected to **analyze, improve, and extend** this system.
+
+Focus on:
+
+ 1. Retrieval (RAG)
+
+* Improve context retrieval
+* Avoid passing full context blindly
+
+---
+
+ 2. Output Reliability
+
+* Ensure valid JSON output
+* Add schema validation and error handling
+
+---
+
+ 3. Hallucination Control
+
+* Ensure answers are grounded in context
+* Handle missing or conflicting information safely
+
+---
+ 4. System Design
+
+* Improve code structure
+* Add logging / observability
+* Handle edge cases gracefully
+
+---
+
+
+
+
